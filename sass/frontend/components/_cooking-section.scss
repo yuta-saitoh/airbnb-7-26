@@ -1,0 +1,15 @@
+.cooking-section {
+    background-color: $black;
+}
+
+.cooking-section > .container > .top {
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(phone) {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
