@@ -1,0 +1,33 @@
+.sp-navbar {
+    display: none;
+    @include respond(tab-port) {
+		display: flex;
+		width: 80%;
+        min-width: 250px;
+        margin: 0 auto;
+		margin-top: 50px;
+		box-shadow: $shadow;
+    }
+}
+
+.sp-navbar > .icon {
+	width: 20px;
+	margin-left: 15px;
+}
+
+.sp-navbar input[type='text'] {
+	font-size: 1rem;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px 0;;
+	padding-left: 10px;
+	letter-spacing: 1px;
+	border: 0;
+}
+
+.sp-navbar input[type='text']:focus {
+	outline: none;
+}
+.sp-navbar input[type='text']:focus::after {
+	outline: none;
+}
